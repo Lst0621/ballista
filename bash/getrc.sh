@@ -1,4 +1,5 @@
 #!/bin/bash
 
 
-cp ~/.bashrc ./
+cp ~/.bashrc ./rc.sh
+
