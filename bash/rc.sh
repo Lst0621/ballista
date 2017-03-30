@@ -143,18 +143,17 @@ alias gp='git pull'
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
 COLS=`tput cols`
 
-fortune| cowthink -f $cow  |\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col - 40 )/2); printf "%"(s+l)"s\n", $0 }'  | \
+(fortune &&
+	echo "" &&
+	echo My Name is  $cow ) | \
+	cowthink -f $cow  |\
+	awk -v "col=$COLS"  '{ l=length(); s=int((col -30  )/2); printf "%"(s+l)"s\n", $0 }'  | \
 
-	lolcat
-echo ""
-echo My Name is  $cow  | \
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-l )/2); printf "%"(s+l)"s\n", $0 }'  | \
-	lolcat
+	lolcat -F 0.01
 echo ""
 
 fortune-zh|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-l )/2); printf "%"(s+l)"s\n", $0 }'  
+	awk -v "col=$COLS"  '{ l=length(); s=int((col- l )/2); printf "%"(s+l)"s\n", $0 }'  | lolcat
 echo ""
 
 (ddate  | \
@@ -166,8 +165,6 @@ date  | \
 	echo "" &&
 	banner WELCOME!|\
 	awk -v "col=$COLS"  '{ l=length(); s=int((col-60 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
-	lolcat
+	lolcat -F 0.12
 	echo ""
 	cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
-	echo ""
-	echo ""
