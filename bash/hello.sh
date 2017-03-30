@@ -7,6 +7,8 @@ alias e='exit'
 alias c='javac *.java'
 alias gp='git pull'
 
+#just for fun
+fortune | cowsay | lolcat
 
 ########################################
 
