@@ -56,11 +56,22 @@ if [ -n "$force_color_prompt" ]; then
 	fi
 fi
 
+#if [ "$color_prompt" = yes ]; then
+#	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+#	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
+
+PROMPT_DIRTRIM=3
+
 if [ "$color_prompt" = yes ]; then
-	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
 else
-	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+	PS1='${debian_chroot:+($debian_chroot)}\u:\W\$ '
 fi
+
+
+
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -115,7 +126,12 @@ if ! shopt -oq posix; then
 		. /etc/bash_completion
 	fi
 fi
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
+
+
+
+#export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]\[$(tput setaf 4)\] $ \[$(tput sgr0)\]"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/lst2016/google-cloud-sdk/path.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/path.bash.inc'; fi
@@ -137,7 +153,11 @@ alias a='fc -s'
 alias e='exit'
 alias c='javac *.java'
 alias gp='git pull'
-
+alias heads='head -10'
+alias tails='tail -10'
+alias ww='cd ~/workspace'
+alias sd='shutdown'
+alias LS='ls'
 ####### Welcome to my life
 
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
@@ -163,8 +183,19 @@ date  | \
 	awk -v "col=$COLS"  '{ l=length(); s=int((col-l )/2); printf "%"(s+l)"s\n", $0 }'  &&
 
 	echo "" &&
-	banner WELCOME!|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-60 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
+	banner "WELCOME"|\
+	awk -v "col=$COLS"  '{ l=length(); s=int((col-60 )/2); printf "%"(s+l)"s\n", $0 }'  &&
+	banner "2 MY"|\
+	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  &&
+	banner "LIFE"|\
+	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
 	lolcat -F 0.12
-	echo ""
-	cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
+
+
+	######################################################
+	######################################################
+	######################################################
+	######################################################
+	######################################################
+	######################################################
+	######################################################
