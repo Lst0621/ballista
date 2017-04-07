@@ -131,7 +131,7 @@ fi
 
 
 #export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]\[$(tput setaf 4)\] $ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]\[$(tput setaf 1 )\] → _→  \[$(tput sgr0)\]"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/lst2016/google-cloud-sdk/path.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/path.bash.inc'; fi
