@@ -131,7 +131,7 @@ fi
 
 
 #export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t \[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 5 )\] → _→  \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\]+1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\] → _→  \[$(tput  sgr0)\]"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/lst2016/google-cloud-sdk/path.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/path.bash.inc'; fi
@@ -155,9 +155,20 @@ alias c='javac *.java'
 alias gp='git pull'
 alias heads='head -10'
 alias tails='tail -10'
+
+# walk quickly
 alias ww='cd ~/workspace'
+alias cdd='cd ~'
+alias qq='cd ../'
+alias qqq='cd ../../'
+alias qqqq='cd ../../../'
+
+
 alias sd='shutdown'
 alias LS='ls'
+alias wd='cd /media/lst2016/Windows/'
+# control c 
+alias cl='xclip'
 ####### Welcome to my life
 
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
@@ -184,9 +195,9 @@ date  | \
 
 	echo "" &&
 	banner "WELCOME"|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-60 )/2); printf "%"(s+l)"s\n", $0 }'  &&
-	banner "2 MY"|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  &&
+	awk -v "col=$COLS"  '{ l=length(); s=int((col-56 )/2); printf "%"(s+l)"s\n", $0 }'  &&
+	banner "TO MY"|\
+	awk -v "col=$COLS"  '{ l=length(); s=int((col-45 )/2); printf "%"(s+l)"s\n", $0 }'  &&
 	banner "LIFE"|\
 	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
 	lolcat -F 0.12
