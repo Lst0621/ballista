@@ -131,7 +131,52 @@ fi
 
 
 #export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\]+1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\] → _→  \[$(tput  sgr0)\]"
+
+
+# different faces 
+# lol 
+
+
+case ` expr  $RANDOM % 10 ` in 
+	0)
+		face="(¬_¬)" 
+		;;
+
+	1)  
+		face="¯\_(ツ)_/¯"
+		;;
+
+	2) 
+		face="(◕ ‿ ◕ ✿)"
+		;;
+
+	3)
+		face="☃ "
+		;;
+
+	4)
+		face="☃ "
+		;;
+	5)
+		face="☺ "
+		;;
+
+	6)
+		face="☀ " 
+		;;
+	7)
+		face="❅ "
+		;;
+	8)
+		face="♥ " 
+		;;
+	9)
+		face="♪ "  
+		;;
+esac
+
+
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\] $face \[$(tput  sgr0)\]"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/lst2016/google-cloud-sdk/path.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/path.bash.inc'; fi
@@ -169,6 +214,7 @@ alias LS='ls'
 alias wd='cd /media/lst2016/Windows/'
 # control c 
 alias cl='xclip'
+alias cll='xclip -o'
 ####### Welcome to my life
 
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
@@ -210,3 +256,5 @@ date  | \
 	######################################################
 	######################################################
 	######################################################
+
+
