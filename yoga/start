@@ -1,0 +1,15 @@
+#!/bin/bash
+setxkbmap -option ctrl:swapcaps
+setxkbmap -option 'caps:ctrl_modifier'
+xcape -e 'Caps_Lock=Escape;Control_L=Escape;Control_R=Escape'
+
+dev1=$(xsetwacom --list devices | cut -f2  | cut -f2 -d' ' | head -1)
+dev2=$(xsetwacom --list devices | cut -f2  | cut -f2 -d' ' | head -2| tail -1)
+dev3=$(xsetwacom --list devices | cut -f2  | cut -f2 -d' ' | tail -1)
+echo $dev1
+echo $dev2
+echo $dev3
+xsetwacom set "$dev1" "MapToOutput" eDP1
+xsetwacom set "$dev2" "MapToOutput" eDP1
+xsetwacom set "$dev3" "MapToOutput" eDP1
+
