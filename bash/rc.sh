@@ -136,48 +136,7 @@ fi
 # different faces 
 # lol 
 
-
-case ` expr  $RANDOM % 11 ` in 
-	0)
-		face="(¬_¬)" 
-		;;
-
-	1)  
-		face="¯\_(ツ)_/¯"
-		;;
-
-	2) 
-		face="(◕ ‿ ◕ ✿)"
-		;;
-
-	3)
-		face="☃ "
-		;;
-
-	4)
-		face="☃ "
-		;;
-	5)
-		face="☺ 😂 " 
-		;;
-
-	6)
-		face="☀ " 
-		;;
-	7)
-		face="❅ "
-		;;
-	8)
-		face="♥ " 
-		;;
-	9)
-		face="♪ "  
-		;;
-
-	10)
-		face="→ _→ "
-		;;
-esac
+face=$(python ~/workspace/ballista/helper/python/prompt.py)
 
 
 export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\] $face \[$(tput  sgr0)\]"

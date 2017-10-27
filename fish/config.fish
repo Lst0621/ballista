@@ -5,22 +5,7 @@ eval (thefuck --alias | tr '
 ' ';')
 
 
-set num_faces 6
-set face "☀ "
-set ran (random)
-set b (math "$ran % $num_faces")
-switch (math "$b")
-case 0
-set face "❅" 
-case 1
-set face "☃"
-case 2
-set face "¯\_(ツ)_/¯"
-case 3
-set face "♥"
-case 4
-set face "♪"  
-end
+set face (python ~/workspace/ballista/helper/python/prompt.py)
 
 
 function fish_prompt
