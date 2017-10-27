@@ -26,14 +26,6 @@ alias clc='xclip -sel clip'
 eval (thefuck --alias | tr '
 		' ';')
 
-
-function fish_prompt
-
-set_color 9400d3
-echo  -e "lst \c"
-set_color 4B0082
-echo  -e "@ \c"
-
 set num_faces 6
 set face "☀ "
 set ran (random)
@@ -50,6 +42,14 @@ set face "♥"
 case 4
 set face "♪"  
 end
+
+
+function fish_prompt
+
+set_color 9400d3
+echo  -e "lst \c"
+set_color 4B0082
+echo  -e "@ \c"
 
 set_color blue
 echo -e  (date "+%m/%d") "\c"
