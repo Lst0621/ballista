@@ -6,7 +6,7 @@ COLS=`tput cols`
 
 (fortune &&
 	echo "" &&
-	echo My Name is  $cow ) | \
+	echo     "       $cow" ) | \
 	cowthink -f $cow  |\
 	awk -v "col=$COLS"  '{ l=length(); s=int((col -30  )/2); printf "%"(s+l)"s\n", $0 }'  | \
 
@@ -19,17 +19,7 @@ echo ""
 
 (ddate  | \
 	awk -v "col=$COLS"  '{ l=length(); s=int((col-l )/2); printf "%"(s+l)"s\n", $0 }'  &&
-	echo "" && 
-date  | \
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-l )/2); printf "%"(s+l)"s\n", $0 }'  &&
-
-	echo "" &&
-	banner "WELCOME"|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-56 )/2); printf "%"(s+l)"s\n", $0 }'  &&
-	banner "TO MY"|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-45 )/2); printf "%"(s+l)"s\n", $0 }'  &&
-	banner "LIFE"|\
-	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
+	echo "" 	)| \
 	lolcat -F 0.12
 
 
