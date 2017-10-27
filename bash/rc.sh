@@ -137,7 +137,7 @@ fi
 # lol 
 
 
-case ` expr  $RANDOM % 10 ` in 
+case ` expr  $RANDOM % 11 ` in 
 	0)
 		face="(¬_¬)" 
 		;;
@@ -158,7 +158,7 @@ case ` expr  $RANDOM % 10 ` in
 		face="☃ "
 		;;
 	5)
-		face="☺ "
+		face="☺ 😂 " 
 		;;
 
 	6)
@@ -172,6 +172,10 @@ case ` expr  $RANDOM % 10 ` in
 		;;
 	9)
 		face="♪ "  
+		;;
+
+	10)
+		face="→ _→ "
 		;;
 esac
 
@@ -190,6 +194,11 @@ export PATH="/usr/local/android-studio/bin:$PATH"
 
 #clang format check
 alias cff="clang-format-3.6  --style=file"
+alias cffja="clang-format-3.6  --style=file -i *.java"
+alias cffc=" clang-format-3.6  --style=file -i *.c " 
+alias cffpp="clang-format-3.6  --style=file -i *.cpp " 
+alias cffh="clang-format-3.6  --style=file -i *.h " 
+
 #previous command
 
 alias a='fc -s'
@@ -215,6 +224,7 @@ alias wd='cd /media/lst2016/Windows/'
 # control c 
 alias cl='xclip'
 alias cll='xclip -o'
+alias clc='xclip -sel clip'
 ####### Welcome to my life
 
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
@@ -248,6 +258,9 @@ date  | \
 	awk -v "col=$COLS"  '{ l=length(); s=int((col-30 )/2); printf "%"(s+l)"s\n", $0 }'  )| \
 	lolcat -F 0.12
 
+
+	eval $(thefuck --alias) 
+fish
 
 	######################################################
 	######################################################

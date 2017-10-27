@@ -24,5 +24,5 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # this is for more workspace
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 5
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 5
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 4
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 4
