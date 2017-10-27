@@ -1,4 +1,5 @@
 set fish_greeting ""
+bash ~/workspace/ballista/helper/bash/greet.sh
 
 alias cff="clang-format-3.6  --style=file"
 alias cffja="clang-format-3.6  --style=file -i *.java"
