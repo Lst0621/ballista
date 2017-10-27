@@ -29,7 +29,12 @@ eval (thefuck --alias | tr '
 
 function fish_prompt
 
-set num_faces 5
+set_color 9400d3
+echo  -e "lst \c"
+set_color 4B0082
+echo  -e "@ \c"
+
+set num_faces 6
 set face "☀ "
 set ran (random)
 set b (math "$ran % $num_faces")
@@ -42,17 +47,31 @@ case 2
 set face "¯\_(ツ)_/¯"
 case 3
 set face "♥"
+case 4
+set face "♪"  
 end
 
-set_color magenta
-echo -e  (date "+%m/%d/%y") "\c"
+set_color blue
+echo -e  (date "+%m/%d") "\c"
+set_color 6B8E23
 set_color green
 echo -e  (date "+%H:%M:%S") "\c"
+
+#set ran (random)
+#set a (math "10 + $ran % 90")
+#set ran (random)
+#set b (math "10 + $ran % 90")
+#set ran (random)
+#set c (math "10 + $ran % 90")
+
+set_color yellow
+echo -e + "\c"
+set_color FF8C00
+echo -e 1s "\c"
+
 set_color red
-echo -e +1s "\c"
-set_color blue
-echo (pwd)
-set_color FFDF00
+echo (pwd) | lolcat
+set_color normal
 echo -e  "$face \c"
 set_color normal
 end
