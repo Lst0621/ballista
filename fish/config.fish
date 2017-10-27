@@ -54,21 +54,18 @@ echo  -e "@ \c"
 
 set_color blue
 echo -e  (date "+%m/%d") "\c"
-set_color 6B8E23
+
 set_color green
+echo -e  (date "+%a") "\c"
+
+set_color yellow
 echo -e  (date "+%H:%M:%S") "\c"
 
 #set ran (random)
-#set a (math "10 + $ran % 90")
-#set ran (random)
-#set b (math "10 + $ran % 90")
-#set ran (random)
 #set c (math "10 + $ran % 90")
 
-set_color yellow
-echo -e + "\c"
 set_color FF8C00
-echo -e 1s "\c"
+echo -e +1s "\c"
 
 set_color red
 echo (pwd) | lolcat
