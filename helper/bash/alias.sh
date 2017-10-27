@@ -38,4 +38,3 @@ alias cl='xclip'
 alias cll='xclip -o'
 alias clc='xclip -sel clip'
 
-# eval $(thefuck --alias) 
