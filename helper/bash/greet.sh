@@ -1,5 +1,4 @@
 #!/bin/bash
-####### Welcome to my life
 
 cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
 COLS=`tput cols`

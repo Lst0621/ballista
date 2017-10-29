@@ -1,5 +1,6 @@
 set fish_greeting ""
 bash ~/workspace/ballista/helper/bash/greet.sh
+#bash ~/workspace/ballista/helper/bash/asc/minions.sh
 .  ~/workspace/ballista/helper/bash/alias.sh
 eval (thefuck --alias | tr '
 ' ';')
