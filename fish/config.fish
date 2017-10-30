@@ -32,7 +32,7 @@ set_color FF8C00
 echo -e "+1s⌚⌚ \c"
 
 set_color red
-echo (pwd)
+echo (prompt_pwd)
 set_color normal
 echo -e  "$face \c"
 set_color normal
