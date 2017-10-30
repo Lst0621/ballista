@@ -39,3 +39,9 @@ set_color normal
 end
 
 
+function matlab
+   set -lx SHELL /bin/bash
+   command matlab $argv 
+end
+
+
