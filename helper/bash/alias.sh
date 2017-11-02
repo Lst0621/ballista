@@ -19,8 +19,6 @@ alias a='fc -s'
 alias e='exit'
 alias c='javac *.java'
 alias gp='git pull'
-alias heads='head -10'
-alias tails='tail -10'
 
 # walk quickly
 alias ww='cd ~/workspace'

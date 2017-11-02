@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import random
-num = 13
+num = 15
 ind = random.randint(0,num)
 pro = {
         0:"٩(•̮̮̃•̃)۶",
@@ -18,8 +18,9 @@ pro = {
         10:"◣_◢",
         11:"✧",
         12:"(ง'̀-'́)ง",
-        13:"■-■"
+        13:"■-■",
+        14:"(◕‿◕)",
+        15:"٩◔̯◔۶"
 }
-face = pro[13]
 face = pro[ind]
 print face
