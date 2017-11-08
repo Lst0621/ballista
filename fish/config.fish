@@ -7,12 +7,13 @@ eval (thefuck --alias | tr '
 
 
 set face (python ~/workspace/ballista/helper/python/prompt.py)
+set myname (whoami)
 
 
 function fish_prompt
 
 set_color 9400d3
-echo  -e "lst \c"
+echo  -e "$myname \c"
 set_color 4B0082
 echo  -e "@ \c"
 
