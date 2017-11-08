@@ -6,7 +6,7 @@ eval (thefuck --alias | tr '
 ' ';')
 
 
-set face (python ~/workspace/ballista/helper/python/prompt.py)
+set face (python ~/workspace/ballista/helper/python/prompt.pyc)
 set myname (whoami)
 
 
