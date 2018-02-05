@@ -1,11 +1,17 @@
+# ~/.config/fish/config.fish
+
 set fish_greeting ""
 bash ~/workspace/ballista/helper/bash/greet.sh
-#bash ~/workspace/ballista/helper/bash/asc/minions.sh
+
+#alias
 .  ~/workspace/ballista/helper/bash/alias.sh
+
+# https://github.com/nvbn/thefuck
 eval (thefuck --alias | tr '
 ' ';')
 
 
+# prompt
 set face (python ~/workspace/ballista/helper/python/prompt.pyc)
 set myname (whoami)
 
