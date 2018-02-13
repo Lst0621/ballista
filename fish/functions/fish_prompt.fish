@@ -49,8 +49,8 @@ function fish_prompt --description 'Write out the prompt'
 	echo -n "$segment_separator"
 	
 	set_color normal
-	# GIT
-	echo (__terlar_git_prompt)
+	
+	echo ""
 	
 	
 	# Face
