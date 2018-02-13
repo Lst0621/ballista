@@ -27,8 +27,12 @@ function fish_prompt --description 'Write out the prompt'
 	
 	set_color -b green
 	echo -n  (date "+%a")
-	
+
+	set_color green
 	set_color -b yellow
+	echo -n "$segment_separator"
+	set_color 000000
+
 	echo -n  (date "+%H:%M:%S")
 	
 	set_color -b EE8C00
