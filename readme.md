@@ -2,7 +2,7 @@
 # Ballista
 ![](./fish/fish.png)
 ## Backup for
-- rc: bash, profile, fish shell, vim  
+- rc: bash, profile, fish shell, tmux, vim  
 - helper scripts used by rc
 - configuration scripts
 - independent helper scripts 
