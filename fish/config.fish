@@ -18,11 +18,13 @@ set myname (whoami)
 
 function fish_prompt
 
+# Name
 set_color 9400d3
 echo  -e "$myname \c"
 set_color 4B0082
 echo  -e "@ \c"
 
+# Time
 set_color blue
 echo -e  (date "+%m/%d") "\c"
 
@@ -32,15 +34,19 @@ echo -e  (date "+%a") "\c"
 set_color yellow
 echo -e  (date "+%H:%M:%S")"\c"
 
-#set ran (random)
-#set c (math "10 + $ran % 90")
-
 set_color FF8C00
 echo -e "+1s⌚⌚ \c"
 
+# PWD
 set_color red
-echo (prompt_pwd)
+echo -n  (prompt_pwd)
 set_color normal
+
+# GIT
+echo (__terlar_git_prompt)
+
+
+# Face
 echo -e  "$face \c"
 set_color normal
 end
