@@ -15,6 +15,7 @@ eval (thefuck --alias | tr '
 set face (python ~/workspace/ballista/helper/python/prompt.pyc)
 set myname (whoami)
 
+# arrow/ tri
 # powerline font needed!
 # ref: https://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 set segment_separator \uE0B0
@@ -83,9 +84,5 @@ function fish_prompt
 end
 
 
-function matlab
-   set -lx SHELL /bin/bash
-   command matlab $argv 
-end
 
 
