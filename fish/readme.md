@@ -9,3 +9,8 @@ config file for [The user-friendly command line shell](http://fishshell.com/)
 
 ## Screenshots
 ![](./fish.png)
+
+## todo
+### git
+ref: https://github.com/simnalamburt/shellder
+### right prompt
