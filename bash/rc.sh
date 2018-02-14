@@ -138,8 +138,10 @@ fi
 
 face=$(shuf -n1 ~/workspace/ballista/helper/prompt.txt)
 
+# color ref:
+# https://unix.stackexchange.com/questions/269077/tput-setaf-color-table-how-to-determine-color-codes
 
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\]\n$face \[$(tput  sgr0)\]"
+export PS1="\[$(tput dim)\]\[$(tput setaf 232 )\]\[$(tput setab 4)\]lst\[$(tput setab 3 )\] \t\[$(tput setab 2 )\] +1s \[$(tput setab 1)\]\w\[$(tput setab 232 )\]\n\[$(tput setaf 177 )\]$face \[$(tput  sgr0)\]"
 
 export PATH="/usr/local/android-studio/bin:$PATH"
 
@@ -147,7 +149,7 @@ export PATH="/usr/local/android-studio/bin:$PATH"
 
 eval $(thefuck --alias) 
 
-bash ~/workspace/ballista/helper/bash/greet.sh
+# bash ~/workspace/ballista/helper/bash/greet.sh
 
 	######################################################
 	######################################################
