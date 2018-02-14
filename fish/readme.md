@@ -11,6 +11,4 @@ config file for [The user-friendly command line shell](http://fishshell.com/)
 ![](./fish.png)
 
 ## todo
-### git
-ref: https://github.com/simnalamburt/shellder
-### right prompt
+### uniform arrow (use same function)
