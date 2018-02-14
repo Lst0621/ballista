@@ -16,7 +16,7 @@ function prompt_segment -d "Function to draw a segment"
   if [ "$current_bg" != 'NONE' -a "$argv[1]" != "$current_bg" ]
     set_color -b $bg
     set_color $current_bg
-    echo -n "$segment_separator"
+    echo -n "$segment_separator_left"
     set_color -b $bg
     set_color $fg
   else

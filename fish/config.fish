@@ -18,7 +18,16 @@ set myname (whoami)
 # arrow/ tri
 # powerline font needed!
 # ref: https://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
-set segment_separator \uE0B0
-set segment_separator_right  \uE0b2
 
+# dead code
+#  can be used with powerline
+#set segment_separator \uE0B0
+#set segment_separator_right  \uE0b2
+
+# nerd font needed!
+# https://nerdfonts.com/
+#  use DroidSansMono
+#  ref:https://github.com/ryanoasis/powerline-extra-symbols
+set segment_separator_left \uE0c8
+set segment_separator_right  \ue0c2
 
