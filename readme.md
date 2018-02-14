@@ -9,3 +9,4 @@
 ## Stable
 - yoga-1.0.0
 - yoga-1.0.1
+- yoga-1.0.2
