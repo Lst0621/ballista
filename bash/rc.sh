@@ -141,7 +141,7 @@ face=$(shuf -n1 ~/workspace/ballista/helper/prompt.txt)
 # color ref:
 # https://unix.stackexchange.com/questions/269077/tput-setaf-color-table-how-to-determine-color-codes
 
-export PS1="\[$(tput dim)\]\[$(tput setaf 232 )\]\[$(tput setab 4)\]lst\[$(tput setab 3 )\] \t\[$(tput setab 2 )\] +1s \[$(tput setab 1)\]\w\[$(tput setab 232 )\]\n\[$(tput setaf 177 )\]$face \[$(tput  sgr0)\]"
+export PS1="\[$(tput dim)\]\[$(tput setaf 232 )\]\[$(tput setab 4)\]lst\[$(tput setab 22 )\] \t\[$(tput setab 166)\] +1s \[$(tput setab 1)\]\w\[$(tput setab 232 )\]\n\[$(tput setaf 177 )\]$face \[$(tput  sgr0)\]"
 
 export PATH="/usr/local/android-studio/bin:$PATH"
 
