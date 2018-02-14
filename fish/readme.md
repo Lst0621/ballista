@@ -11,7 +11,7 @@ config file for [The user-friendly command line shell](http://fishshell.com/)
 ![](./fish.png)
 
 ## Todo
-### uniform arrow (use same function)
+### arrow to left
 
 
 ## Ref
