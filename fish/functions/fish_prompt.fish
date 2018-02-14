@@ -15,6 +15,8 @@ function fish_prompt --description 'Write out the prompt'
 
 	
 	# Time
+
+
 	set_color  -b blue
 
 
@@ -24,8 +26,16 @@ function fish_prompt --description 'Write out the prompt'
 
 
 	echo -n (date "+%m/%d")
+
+
 	
 	set_color -b green
+	set_color blue
+	echo -n "$segment_separator"
+	set_color 000000
+
+
+
 	echo -n  (date "+%a")
 
 	set_color green
@@ -36,6 +46,10 @@ function fish_prompt --description 'Write out the prompt'
 	echo -n  (date "+%H:%M:%S")
 	
 	set_color -b EE8C00
+	set_color yellow
+	echo -n "$segment_separator"
+
+	set_color 000000
 	echo -n "+1s⌚⌚ "
 	
 	# PWD
