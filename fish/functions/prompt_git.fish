@@ -51,10 +51,12 @@ function prompt_git -d "Display the current git state"
       end
     end
 	
+    set_color $BG
+	set_color -b 000000
+    echo -n $segment_separator_right
 	set_color -b $BG
 	set_color 000000
     echo -n  " $PROMPT"
-	set current_bg $BG 
-	prompt_segment 000000 000000 ''
+	set_color -b 000000
   end
 end

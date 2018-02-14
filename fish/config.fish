@@ -19,5 +19,6 @@ set myname (whoami)
 # powerline font needed!
 # ref: https://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 set segment_separator \uE0B0
+set segment_separator_right  \uE0b2
 
 
