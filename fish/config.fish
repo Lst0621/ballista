@@ -12,7 +12,7 @@ eval (thefuck --alias | tr '
 
 
 # prompt
-set face (python ~/workspace/ballista/helper/python/prompt.pyc)
+set face (shuf -n1 ~/workspace/ballista/helper/prompt.txt)
 set myname (whoami)
 
 # arrow/ tri
