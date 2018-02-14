@@ -28,6 +28,6 @@ set myname (whoami)
 # https://nerdfonts.com/
 #  use DroidSansMono
 #  ref:https://github.com/ryanoasis/powerline-extra-symbols
-set segment_separator_left \uE0c8
+set segment_separator_left \uE0c0
 set segment_separator_right  \ue0c2
 
