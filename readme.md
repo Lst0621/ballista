@@ -6,3 +6,6 @@
 - helper scripts used by rc
 - configuration scripts
 - independent helper scripts 
+## Stable
+- yoga-1.0.0
+- yoga-1.0.1
