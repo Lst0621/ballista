@@ -10,5 +10,9 @@ config file for [The user-friendly command line shell](http://fishshell.com/)
 ## Screenshots
 ![](./fish.png)
 
-## todo
+## Todo
 ### uniform arrow (use same function)
+
+
+## Ref
+- [Oh My Fish Themes](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md)
