@@ -136,16 +136,10 @@ fi
 # different faces 
 # lol 
 
-face=$(python ~/workspace/ballista/helper/python/prompt.py)
+face=$(shuf -n1 ~/workspace/ballista/helper/prompt.txt)
 
 
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\] $face \[$(tput  sgr0)\]"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/lst2016/google-cloud-sdk/path.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/lst2016/google-cloud-sdk/completion.bash.inc' ]; then source '/home/lst2016/google-cloud-sdk/completion.bash.inc'; fi
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]\[$(tput setaf 3)\]lst\[$(tput setaf 2)\] \t\[$(tput setaf 7 )\] +1s \[$(tput setaf 1)\]\w\[$(tput setaf 4 )\]\n$face \[$(tput  sgr0)\]"
 
 export PATH="/usr/local/android-studio/bin:$PATH"
 
