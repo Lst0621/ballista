@@ -19,6 +19,10 @@ alias a='fc -s'
 alias c='javac *.java'
 alias gp='git pull'
 
+# some git
+alias gipush='git push'
+
+
 # walk quickly
 alias ww='cd ~/workspace'
 alias cdd='cd ~'
