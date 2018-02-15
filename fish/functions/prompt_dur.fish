@@ -1,5 +1,8 @@
 #ref https://github.com/oh-my-fish/theme-budspencer/blob/master/fish_right_prompt.fish
 function prompt_dur -d 'Displays the elapsed time of last command'
+	if set -q $CMD_DURATION
+		return
+	end	
 	set -l seconds ''
 	set -l minutes ''
 	set -l hours ''
