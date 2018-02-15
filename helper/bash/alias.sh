@@ -16,7 +16,6 @@ alias cffh="clang-format-3.6  --style=file -i *.h "
 alias a='fc -s'
 
 #just because i am lasy
-alias e='exit'
 alias c='javac *.java'
 alias gp='git pull'
 
