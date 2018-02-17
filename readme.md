@@ -8,7 +8,7 @@
 - independent helper scripts 
 ## Notes
 This project is located in ~/workspace/ on my machine. Some file(s) in this project may be used directly from rc scripts.
-## Stable
+## Stable Branches
 - yoga-1.0.0
 - yoga-1.0.1
 - yoga-1.0.2
