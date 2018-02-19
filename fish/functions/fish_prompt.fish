@@ -38,14 +38,14 @@ function fish_prompt --description 'Write out the prompt'
 	
 	
 	# Face
-	set  current_bg 111111
+	set  current_bg 050505
 
-	set_color -b $current_bg 666666
+	set_color -b $current_bg 222222
 
 	echo -n  "$face "
-	prompt_segment 333333 777777 ''
+	prompt_segment 222222 444444 ''
 	echo -n  "$face "
-	prompt_segment 555555 888888 ''
+	prompt_segment 444444 666666 ''
 	echo -n  "$face "
 	prompt_segment 000000 000000 ' '
 
