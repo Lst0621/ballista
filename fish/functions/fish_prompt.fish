@@ -45,7 +45,7 @@ function fish_prompt --description 'Write out the prompt'
 	echo -n  "$face "
 	prompt_segment 222222 444444 ''
 	echo -n  "$face "
-	prompt_segment 444444 666666 ''
+	prompt_segment 444444 777777 ''
 	echo -n  "$face "
 	prompt_segment 000000 000000 ' '
 
