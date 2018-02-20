@@ -8,6 +8,9 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+# swap capslock and left control
+# if you press capaslock( control now) once, it is map to esc
+# should be nice for vimer
 setxkbmap -option ctrl:swapcaps
 setxkbmap -option 'caps:ctrl_modifier'
 xcape -e 'Caps_Lock=Escape;Control_L=Escape;Control_R=Escape'
