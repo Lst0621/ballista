@@ -1,0 +1,9 @@
+#!/bin/bash
+current_branch=$(git branch | grep \* |\
+	cut -d ' ' -f2)
+echo merge $current_branch into $1
+
+git checkout $1
+git merge $2
+git checkout $1
+
