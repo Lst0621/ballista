@@ -3,6 +3,8 @@
 
 ~~Every project needs a name~~
 
+In case I earn enough money to afford a new desktop ~~and~~ or a new laptop, this is how I should configure it.
+
 ## Backup for
 - rc: bash, profile, fish shell, tmux, vim and more...  
 - helper scripts used by rc

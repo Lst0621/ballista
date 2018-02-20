@@ -50,8 +50,11 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+""""""""""""""""""pathogen"""""""""""""""""
 execute pathogen#infect()
 
+filetype plugin indent on    " required
 
 """""""""""""""""conf""""""""""""""""""""""
 " !!!
@@ -59,12 +62,12 @@ execute pathogen#infect()
 set term=xterm-256color
 set t_Co=256
 
-set ts=4
+set tabstop=4
 set shiftwidth=4
 
 set nohlsearch
 
-set nu relativenumber
+set number relativenumber
 
 " insert mode no relativenumber
 " ref: https://jeffkreeftmeijer.com/vim-number/
@@ -91,7 +94,7 @@ nnoremap <F3>   <Esc>:w<CR>
 nnoremap <F4>   <Esc>:q<CR>
 nnoremap <S-F4>   <Esc>:!q<CR>
 
-"refresh
+"refresh ( file may be modified in ide)
 nnoremap <F5>   <Esc>:edit<CR>
 
 "number 
@@ -102,7 +105,6 @@ nnoremap <S-F6>   <Esc>:set number relativenumber<CR>
 nnoremap <F7>   <Esc>:set background=dark<CR>
 nnoremap <S-F7>   <Esc>:set background=light<CR>
 
-nnoremap <F9>   <Esc>:colors default<CR>
 nnoremap <F10>   <Esc>:colors morning<CR>
 
 
