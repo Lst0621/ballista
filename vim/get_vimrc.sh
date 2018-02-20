@@ -1,3 +1,3 @@
 #!/bin/bash
-cp ~/.vimrc rc.vim
+cp ~/.vimrc vimrc.vim
 
