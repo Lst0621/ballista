@@ -1,6 +1,3 @@
 #!/bin/bash
-
-
-cp ~/.bashrc ./rc.sh
+cp ~/.bashrc  bashrc.sh
 cp ~/.profile ./profile.sh
-
