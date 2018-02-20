@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf | head -1)
+cow=$(ls /usr/share/cowsay/cows | cut -f1 -d'.' | shuf -n1)
 COLS=`tput cols`
 
 (fortune &&
