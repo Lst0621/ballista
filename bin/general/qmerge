@@ -5,5 +5,4 @@ echo merge $current_branch into $1
 
 git checkout $1
 git merge $current_branch
-git checkout $current_branch
 
