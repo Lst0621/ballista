@@ -4,6 +4,6 @@ current_branch=$(git branch | grep \* |\
 echo merge $current_branch into $1
 
 git checkout $1
-git merge $2
-git checkout $1
+git merge $current_branch
+git checkout $current_branch
 
