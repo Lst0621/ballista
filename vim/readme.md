@@ -10,6 +10,8 @@ https://github.com/tpope/vim-pathogen
 https://github.com/Valloric/YouCompleteMeZ
 ## vim-colorscheme-switcher
 https://github.com/xolox/vim-colorscheme-switcher
+## Nerdtree
+https://github.com/scrooloose/nerdtree
 ## airline
 https://github.com/vim-airline/vim-airline 
 ## Vundle

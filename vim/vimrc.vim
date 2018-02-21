@@ -9,6 +9,8 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -87,17 +89,17 @@ colorscheme darkglass
 map <F2> mzgg=G'z<CR>
 
 " write 
-" add shift to prevent silly action
 nnoremap <F3>   <Esc>:w<CR>
 
 "quit and force quit
+"add shift to prevent silly action: quit without saving
 nnoremap <F4>   <Esc>:q<CR>
 nnoremap <S-F4>   <Esc>:!q<CR>
 
 "refresh ( file may be modified in ide)
 nnoremap <F5>   <Esc>:edit<CR>
 
-"number 
+"line number 
 nnoremap <F6>   <Esc>:set nonumber norelativenumber<CR>
 nnoremap <S-F6>   <Esc>:set number relativenumber<CR>
 
@@ -105,8 +107,17 @@ nnoremap <S-F6>   <Esc>:set number relativenumber<CR>
 nnoremap <F7>   <Esc>:set background=dark<CR>
 nnoremap <S-F7>   <Esc>:set background=light<CR>
 
-nnoremap <F10>   <Esc>:colors morning<CR>
+"coding day and night
+nnoremap <F10>   <Esc>:colorscheme morning<CR>
+nnoremap <S-F10>   <Esc>:colorscheme darkglass<CR>
 
+
+""""""""with leader""""""""""""""
+" nerd tree
+nnoremap <leader>n <Esc>:NERDTree
+
+" i do not like use shift often
+nnoremap <leader><leader>  :
 
 "more hot key to be added 
 

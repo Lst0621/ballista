@@ -1,7 +1,8 @@
 # Ballista
 ![](https://study.com/cimages/multimages/16/ballista_roman.png)
 ## Intro
-In case I earn enough money to afford ~~(or my boss buy me)~~ a new desktop ~~and~~ or a new laptop, this is how I should configure it.
+In case I earn enough money to afford ~~(or my boss buy me)~~ a new desktop ~~and~~ or a new laptop,
+this is how I should configure it.
 
 ## List
 - rc: bash, profile, fish shell, tmux, vim and more...  
