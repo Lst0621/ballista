@@ -71,6 +71,8 @@ set nohlsearch
 
 set number relativenumber
 
+
+
 " insert mode no relativenumber
 " ref: https://jeffkreeftmeijer.com/vim-number/
 :augroup numbertoggle
@@ -81,7 +83,6 @@ set number relativenumber
 
 colorscheme darkglass
 "colorscheme morning
-"colors default
 "colors molokai
 
 """"""""""""""""""""""""hot key""""""""""""""
@@ -90,6 +91,9 @@ map <F2> mzgg=G'z<CR>
 
 " write 
 nnoremap <F3>   <Esc>:w<CR>
+" write sudo
+" well, i may never remember this cmd
+nnoremap <S-F3>   <Esc>:w !sudo tee %<CR>
 
 "quit and force quit
 "add shift to prevent silly action: quit without saving
@@ -113,10 +117,12 @@ nnoremap <S-F10>   <Esc>:colorscheme darkglass<CR>
 
 
 """"""""with leader""""""""""""""
+
 " nerd tree
 nnoremap <leader>n <Esc>:NERDTree
+nnoremap <leader>N <Esc>:NERDTree<CR>
 
-" i do not like use shift often
+" i do not like use shift often but ':' is always in need
 nnoremap <leader><leader>  :
 
 "more hot key to be added 
