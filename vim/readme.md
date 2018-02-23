@@ -7,7 +7,7 @@
 ## Pathogen
 https://github.com/tpope/vim-pathogen
 ## YCM
-https://github.com/Valloric/YouCompleteMeZ
+https://github.com/Valloric/YouCompleteMe
 ## vim-colorscheme-switcher
 https://github.com/xolox/vim-colorscheme-switcher
 ## Nerdtree
