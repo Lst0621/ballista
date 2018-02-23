@@ -16,14 +16,12 @@ function fish_prompt --description 'Write out the prompt'
 	echo -n (date "+%m/%d")
 
 	prompt_segment green 000000 ''
-
 	echo -n  (date "+%a")
 
-	prompt_segment yellow 000000 ''
-
+	prompt_segment dd9900 000000 ''
 	echo -n  (date "+%H:%M:%S")
 
-	prompt_segment EE8C00 000000 ''
+	prompt_segment dd3800 000000 ''
 	echo -n "+1s⌚⌚ "
 
 	

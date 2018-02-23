@@ -15,6 +15,4 @@ https://github.com/scrooloose/nerdtree
 ## airline
 https://github.com/vim-airline/vim-airline 
 ## Vundle
-not sure if necessary
-
 https://github.com/VundleVim/Vundle.vim
