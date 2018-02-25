@@ -1,0 +1,7 @@
+#!/bin/bash
+# open a tab in chrome and search in google
+echo "google it"
+read item
+google-chrome-stable  "www.google.com/search?q=$item" 
+# todo
+# add a bing/ baidu version where google cannot be pinged
