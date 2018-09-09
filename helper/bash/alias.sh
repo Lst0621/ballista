@@ -3,11 +3,11 @@
 #####  ALIAS #### 
 
 #clang format check
-alias cff="clang-format-3.6  --style=file"
-alias cffja="clang-format-3.6  --style=file -i *.java"
-alias cffc=" clang-format-3.6  --style=file -i *.c " 
-alias cffpp="clang-format-3.6  --style=file -i *.cpp " 
-alias cffh="clang-format-3.6  --style=file -i *.h " 
+alias cff="clang-format-3.9  --style=file"
+alias cffja="clang-format-3.9  --style=file -i *.java"
+alias cffc=" clang-format-3.9  --style=file -i *.c " 
+alias cffpp="clang-format-3.9  --style=file -i *.cpp " 
+alias cffh="clang-format-3.9  --style=file -i *.h " 
 
 
 
