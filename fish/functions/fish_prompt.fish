@@ -2,13 +2,14 @@ function fish_prompt --description 'Write out the prompt'
 
 	# Name
 	set_color 000000
-	set -g current_bg 9400d3
+	set -g current_bg  4B0082
 	set_color -b $current_bg
 	echo  -n "$myname"
 
-	set -g current_bg  4B0082
+	set -g current_bg 9400d3
 	set_color -b $current_bg
 	echo  -n "@"
+	echo  -n (cat /etc/hostname)
 	
 	# Time
 
